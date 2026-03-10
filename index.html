@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Seat Cover Solutions - Brand Guide</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -18,7 +18,8 @@
       --brand-gray-mid: #F0F0F0;
       --brand-gray-border: #D0D0D0;
       --brand-muted: rgba(0,0,0,0.38);
-      --font-body: 'Inter', sans-serif;
+      --font-heading: 'Oswald', sans-serif;
+      --font-body: 'Roboto', sans-serif;
     }
 
     html { scroll-behavior: smooth; }
@@ -89,10 +90,12 @@
       margin-bottom: 24px;
     }
     .hero h1 {
+      font-family: var(--font-heading);
       font-size: clamp(40px, 6vw, 72px);
-      font-weight: 900;
+      font-weight: 700;
       line-height: 1.05;
-      letter-spacing: -0.03em;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
       margin-bottom: 24px;
     }
     .hero p {
@@ -122,9 +125,11 @@
       margin-bottom: 12px;
     }
     .section-title {
+      font-family: var(--font-heading);
       font-size: 32px;
-      font-weight: 800;
-      letter-spacing: -0.02em;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
       margin-bottom: 16px;
       line-height: 1.2;
     }
@@ -161,7 +166,7 @@
     }
     .color-name {
       font-weight: 700;
-      font-size: 14px;
+      font-size: 15px;
       margin-bottom: 4px;
     }
     .color-hex {
@@ -188,17 +193,21 @@
       margin-bottom: 16px;
     }
     .type-sample-large {
+      font-family: var(--font-heading);
       font-size: 56px;
-      font-weight: 800;
-      letter-spacing: -0.03em;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
       line-height: 1.1;
       margin-bottom: 8px;
     }
     .type-sample-medium {
+      font-family: var(--font-heading);
       font-size: 28px;
-      font-weight: 600;
+      font-weight: 500;
       margin-bottom: 8px;
-      letter-spacing: -0.01em;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
     }
     .type-sample-body {
       font-size: 16px;
@@ -245,17 +254,17 @@
       font-family: var(--font-body);
     }
     .btn-primary {
-      background: var(--brand-green);
+      background: var(--brand-red);
       color: #fff;
     }
     .btn-primary-large {
-      background: var(--brand-green);
+      background: var(--brand-red);
       color: #fff;
       padding: 20px 30px;
       font-size: 16px;
     }
     .btn-secondary {
-      background: var(--brand-green-dark);
+      background: #c41e2a;
       color: #fff;
     }
     .btn-outline {
@@ -296,7 +305,7 @@
       padding: 0;
     }
     .rule-card li {
-      font-size: 14px;
+      font-size: 15px;
       color: #444;
       padding: 6px 0;
       padding-left: 20px;
@@ -339,12 +348,14 @@
       margin-bottom: 8px;
     }
     .persona-card h3 {
-      font-size: 20px;
-      font-weight: 800;
+      font-family: var(--font-heading);
+      font-size: 22px;
+      font-weight: 700;
+      text-transform: uppercase;
       margin-bottom: 12px;
     }
     .persona-card p {
-      font-size: 14px;
+      font-size: 15px;
       color: #666;
       line-height: 1.6;
     }
@@ -354,7 +365,7 @@
       border-left: 3px solid var(--brand-red);
       padding-left: 16px;
       margin-top: 16px;
-      font-size: 14px;
+      font-size: 15px;
     }
 
     /* TRUST BADGES */
@@ -386,14 +397,16 @@
     }
     .trust-text {
       font-weight: 600;
-      font-size: 14px;
+      font-size: 15px;
     }
 
     /* MESSAGING */
     .tagline-display {
+      font-family: var(--font-heading);
       font-size: clamp(32px, 5vw, 56px);
-      font-weight: 900;
-      letter-spacing: -0.03em;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
       line-height: 1.1;
       margin-bottom: 40px;
     }
@@ -407,7 +420,7 @@
       background: #fff;
       padding: 16px 20px;
       border-radius: 8px;
-      font-size: 14px;
+      font-size: 15px;
       color: #333;
       box-shadow: 0 1px 3px rgba(0,0,0,0.06);
     }
@@ -430,7 +443,7 @@
       margin-bottom: 8px;
     }
     .tone-item p {
-      font-size: 13px;
+      font-size: 15px;
       color: #666;
       line-height: 1.6;
     }
@@ -453,7 +466,7 @@
       margin-bottom: 8px;
     }
     .photo-rule p {
-      font-size: 13px;
+      font-size: 15px;
       color: #666;
       line-height: 1.6;
     }
@@ -474,6 +487,26 @@
       font-weight: 600;
       text-decoration: line-through;
     }
+
+    /* LOAD MORE */
+    .reviews-hidden { display: none; }
+    .load-more-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 24px;
+      padding: 14px 28px;
+      background: #000;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 15px;
+      font-weight: 500;
+      font-family: var(--font-body);
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .load-more-btn:hover { background: #333; }
 
     /* FOOTER */
     .guide-footer {
@@ -550,15 +583,15 @@
     <div class="section-label">01 / Color Palette</div>
     <div class="section-title">Colors</div>
     <div class="section-desc">
-      A clean, high-contrast palette. Green drives action. Red creates urgency. Black and white keep things grounded.
+      A clean, high-contrast palette. Red drives action and creates urgency. Black and white keep things grounded.
     </div>
     <div class="color-grid">
       <div class="color-card">
         <div class="color-swatch" style="background: #00B902;"></div>
         <div class="color-info">
-          <div class="color-name">Primary Green</div>
+          <div class="color-name">Brand Green</div>
           <div class="color-hex">#00B902</div>
-          <div class="color-role">CTAs, buttons, action elements</div>
+          <div class="color-role">Accent, success states, trust elements</div>
         </div>
       </div>
       <div class="color-card">
@@ -572,9 +605,9 @@
       <div class="color-card">
         <div class="color-swatch" style="background: #ED2634;"></div>
         <div class="color-info">
-          <div class="color-name">Red Accent</div>
+          <div class="color-name">Primary Red</div>
           <div class="color-hex">#ED2634</div>
-          <div class="color-role">Borders, urgency, vehicle selector, promotions</div>
+          <div class="color-role">CTAs, buttons, borders, urgency, promotions</div>
         </div>
       </div>
       <div class="color-card">
@@ -623,12 +656,12 @@
   <!-- TYPOGRAPHY -->
   <div class="section" id="typography">
     <div class="section-label">02 / Typography</div>
-    <div class="section-title">Sofia Pro</div>
+    <div class="section-title">Oswald + Roboto</div>
     <div class="section-desc">
-      Sofia Pro is our brand font. No substitutes for any brand-facing materials. Used for both headings and body text.
+      Oswald (bold) for all headings. Roboto for body copy, buttons, and everything else. No substitutes for brand-facing materials.
     </div>
     <div class="type-specimen">
-      <div class="font-name">Primary Font: Sofia Pro, sans-serif</div>
+      <div class="font-name">Headings: Oswald, sans-serif / Body: Roboto, sans-serif</div>
       <div class="type-sample-large">Transform Your Interior</div>
       <div class="type-sample-medium">Make Your Interior Look Brand New Again</div>
       <div class="type-sample-body">
@@ -636,22 +669,38 @@
         and an easy installation that takes under an hour with no tools required.
       </div>
     </div>
-    <div class="weight-grid">
+    <div style="margin-bottom: 16px; font-size: 12px; font-weight: 600; color: #999; text-transform: uppercase; letter-spacing: 0.08em;">Oswald (Headings)</div>
+    <div class="weight-grid" style="margin-top: 0;">
       <div class="weight-item">
-        <div class="weight-demo" style="font-weight: 400;">Aa</div>
-        <div class="weight-label">400 Regular - Body text</div>
+        <div class="weight-demo" style="font-family: 'Oswald'; font-weight: 500;">Aa</div>
+        <div class="weight-label">500 Medium</div>
       </div>
       <div class="weight-item">
-        <div class="weight-demo" style="font-weight: 500;">Aa</div>
-        <div class="weight-label">500 Medium - Buttons</div>
+        <div class="weight-demo" style="font-family: 'Oswald'; font-weight: 600;">Aa</div>
+        <div class="weight-label">600 Semi-Bold</div>
       </div>
       <div class="weight-item">
-        <div class="weight-demo" style="font-weight: 600;">Aa</div>
-        <div class="weight-label">600 Semi-Bold - Emphasis</div>
+        <div class="weight-demo" style="font-family: 'Oswald'; font-weight: 700;">Aa</div>
+        <div class="weight-label">700 Bold (primary)</div>
+      </div>
+    </div>
+    <div style="margin-top: 32px; margin-bottom: 16px; font-size: 12px; font-weight: 600; color: #999; text-transform: uppercase; letter-spacing: 0.08em;">Roboto (Body)</div>
+    <div class="weight-grid" style="margin-top: 0;">
+      <div class="weight-item">
+        <div class="weight-demo" style="font-family: 'Roboto'; font-weight: 300;">Aa</div>
+        <div class="weight-label">300 Light</div>
       </div>
       <div class="weight-item">
-        <div class="weight-demo" style="font-weight: 700;">Aa</div>
-        <div class="weight-label">700 Bold - Headings</div>
+        <div class="weight-demo" style="font-family: 'Roboto'; font-weight: 400;">Aa</div>
+        <div class="weight-label">400 Regular (body)</div>
+      </div>
+      <div class="weight-item">
+        <div class="weight-demo" style="font-family: 'Roboto'; font-weight: 500;">Aa</div>
+        <div class="weight-label">500 Medium (buttons)</div>
+      </div>
+      <div class="weight-item">
+        <div class="weight-demo" style="font-family: 'Roboto'; font-weight: 700;">Aa</div>
+        <div class="weight-label">700 Bold (emphasis)</div>
       </div>
     </div>
 
@@ -706,7 +755,7 @@
     <div class="section-label">03 / Buttons & CTAs</div>
     <div class="section-title">Buttons</div>
     <div class="section-desc">
-      Green CTAs only. 6px border radius. No box shadows. Primary CTA is always the bright green.
+      Red CTAs only. 6px border radius. No box shadows. Primary CTA is always brand red (#ED2634).
     </div>
 
     <div style="margin-bottom: 16px; font-size: 12px; font-weight: 600; color: #999; text-transform: uppercase; letter-spacing: 0.08em;">Primary CTA (Large)</div>
@@ -880,8 +929,8 @@
       <div class="rule-card do">
         <h3>Always Do</h3>
         <ul>
-          <li>Use Sofia Pro for all brand materials</li>
-          <li>Use green (#00B902) for CTA buttons</li>
+          <li>Use Oswald (bold) for headings, Roboto for body</li>
+          <li>Use red (#ED2634) for CTA buttons</li>
           <li>Show products installed in vehicles</li>
           <li>Include trust badges (returns, support, designed in MN)</li>
           <li>Reference Year/Make/Model vehicle compatibility</li>
@@ -899,7 +948,7 @@
           <li>Never say "eco-leather"</li>
           <li>Never say "Made in America/USA"</li>
           <li>Never show seat covers outside of a vehicle</li>
-          <li>Never use fonts other than Sofia Pro</li>
+          <li>Never use fonts other than Oswald/Roboto</li>
           <li>Never use colors outside the brand palette for CTAs</li>
           <li>Never use luxury/exotic car imagery</li>
           <li>Never omit trust elements from marketing</li>
@@ -917,7 +966,7 @@
     <div class="section-desc">
       Social proof is central to SCS marketing. Always include reviews and ratings in marketing materials.
     </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px;">
+    <div id="reviews-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px;">
       <div style="background: #fff; border-radius: 12px; padding: 28px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);">
         <div style="color: #f5a623; font-size: 18px; margin-bottom: 12px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
         <p style="font-size: 15px; font-weight: 600; margin-bottom: 8px;">"My 10-year-old SUV looks and feels brand new!"</p>
@@ -934,6 +983,60 @@
         <p style="font-size: 13px; color: #999;">- John Stufflebeem</p>
       </div>
     </div>
+
+    <!-- HIDDEN REVIEWS -->
+    <div id="reviews-extra" class="reviews-hidden" style="display: none;">
+      <div id="reviews-extra-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; margin-top: 16px;">
+        <div style="background: #fff; border-radius: 12px; padding: 28px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);">
+          <div style="color: #f5a623; font-size: 18px; margin-bottom: 12px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p style="font-size: 15px; font-weight: 600; margin-bottom: 8px;">"I can't believe the difference these seat covers have made."</p>
+          <p style="font-size: 13px; color: #999;">- George L.</p>
+        </div>
+        <div style="background: #fff; border-radius: 12px; padding: 28px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);">
+          <div style="color: #f5a623; font-size: 18px; margin-bottom: 12px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p style="font-size: 15px; font-weight: 600; margin-bottom: 8px;">"Fit like a glove. Couldn't be happier with the quality."</p>
+          <p style="font-size: 13px; color: #999;">- Jana P.</p>
+        </div>
+        <div style="background: #fff; border-radius: 12px; padding: 28px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);">
+          <div style="color: #f5a623; font-size: 18px; margin-bottom: 12px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p style="font-size: 15px; font-weight: 600; margin-bottom: 8px;">"Worth the price. These are premium quality seat covers."</p>
+          <p style="font-size: 13px; color: #999;">- Guilfer Oyao</p>
+        </div>
+        <div style="background: #fff; border-radius: 12px; padding: 28px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);">
+          <div style="color: #f5a623; font-size: 18px; margin-bottom: 12px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p style="font-size: 15px; font-weight: 600; margin-bottom: 8px;">"The seat covers upgraded my truck. Looks like a brand new interior."</p>
+          <p style="font-size: 13px; color: #999;">- Jose Castaneda</p>
+        </div>
+        <div style="background: #fff; border-radius: 12px; padding: 28px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);">
+          <div style="color: #f5a623; font-size: 18px; margin-bottom: 12px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p style="font-size: 15px; font-weight: 600; margin-bottom: 8px;">"Fit like a glove on my F-150. Installation was straightforward."</p>
+          <p style="font-size: 13px; color: #999;">- Bill Hirsch</p>
+        </div>
+        <div style="background: #fff; border-radius: 12px; padding: 28px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);">
+          <div style="color: #f5a623; font-size: 18px; margin-bottom: 12px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p style="font-size: 15px; font-weight: 600; margin-bottom: 8px;">"Great quality material. My heated seats still work perfectly through them."</p>
+          <p style="font-size: 13px; color: #999;">- Mark T.</p>
+        </div>
+        <div style="background: #fff; border-radius: 12px; padding: 28px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);">
+          <div style="color: #f5a623; font-size: 18px; margin-bottom: 12px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p style="font-size: 15px; font-weight: 600; margin-bottom: 8px;">"Installed in under 45 minutes. They look OEM, not like aftermarket covers."</p>
+          <p style="font-size: 13px; color: #999;">- David R.</p>
+        </div>
+        <div style="background: #fff; border-radius: 12px; padding: 28px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);">
+          <div style="color: #f5a623; font-size: 18px; margin-bottom: 12px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p style="font-size: 15px; font-weight: 600; margin-bottom: 8px;">"Bought the Wine Red color for my Silverado. Get compliments every time someone rides with me."</p>
+          <p style="font-size: 13px; color: #999;">- Carlos M.</p>
+        </div>
+        <div style="background: #fff; border-radius: 12px; padding: 28px; box-shadow: 0 1px 3px rgba(0,0,0,0.06);">
+          <div style="color: #f5a623; font-size: 18px; margin-bottom: 12px;">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p style="font-size: 15px; font-weight: 600; margin-bottom: 8px;">"Third set I've bought. Put them in every vehicle our family owns. That says it all."</p>
+          <p style="font-size: 13px; color: #999;">- Steven F.</p>
+        </div>
+      </div>
+    </div>
+    <button class="load-more-btn" id="load-more-btn" onclick="document.getElementById('reviews-extra').style.display='block'; this.style.display='none';">
+      Load More Reviews (9)
+    </button>
     <div style="margin-top: 32px; display: flex; gap: 32px; flex-wrap: wrap;">
       <div style="text-align: center;">
         <div style="font-size: 48px; font-weight: 900; letter-spacing: -0.03em;">4.9/5</div>
